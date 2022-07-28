@@ -1,0 +1,532 @@
+body{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    line-height: 23px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8% 9.4%;
+    gap: 120px;
+}
+
+.chapter{
+    max-width: 1170px;
+    display: grid;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.gallery{
+    display: grid;
+    grid-gap: 2.56vh;
+}
+
+.title{
+    font-family: 'Delius Unicase';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+#architectural{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    overflow: hidden;
+}
+
+li{
+    display: grid;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+li img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -1;
+    transition: all 1s;
+}
+
+li:hover img{
+    transform: scale(1.2);
+    transition: all 600ms;
+}
+
+.architectural_two{
+    grid-column: span 2;
+    overflow: hidden;
+}
+
+.content{
+    position: absolute;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "like download"
+        "name date";
+    top: 20px;
+    bottom: 20px;
+    width: 90%;
+    width: -webkit-fill-available;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.like{
+    display: grid;
+    grid-area: like;
+    align-content: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: rgba(224, 224, 224, 0.5);
+    opacity: 0;
+    transition: all 600ms;
+    height: 40px;
+    width: 40px;
+}
+
+.like .img{
+    width: 20;
+    height: 20;
+    fill: #4F4F4F;
+}
+
+.content:hover .like{
+    opacity: 1;
+    transition: all 600ms;
+}
+
+.like:hover{
+    background: #E0E0E0;
+}
+
+.download{
+    display: grid;
+    grid-area: download;
+    align-self: baseline;
+    justify-self: end;
+    align-content: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: rgba(224, 224, 224, 0.5);
+    opacity: 0;
+    transition: all 600ms;
+    height: 40px;
+    width: 40px;
+    }
+
+.download:hover{
+    background: #E0E0E0;
+} 
+.content:hover .download{
+    opacity: 1;
+    transition: all 600ms;
+}
+
+.name{
+    display: grid;
+    grid-area: name;
+    align-self: end;
+    font-weight: 500;
+    line-height: 23px;
+    color: #ffffff;
+ }
+
+ .date{
+    display: grid;
+    grid-area: date;
+    align-self: end;
+    justify-self: end;
+    line-height: 23px;
+    color: #e0e0e0;
+ }
+
+li:hover{
+    background: none;
+    background: linear-gradient( 0deg, #241f24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29% );
+}
+
+li:hover .content{
+    z-index: 1;
+}
+
+#still-life{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.gallery-one{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery-two{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery-one{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery-two {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery-three{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4; 
+}
+
+.gallery-four{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4; 
+}
+
+.gallery-five{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.gallery-six{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#portrait{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.portrait1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.portrait2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.portrait3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.portrait4{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.portrait5{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.portrait6{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.portrait7{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.portrait8{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.portrait9{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.portrait10{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+/*Architectural Photography*/
+@media screen and (max-width: 1024px){
+    #architectural{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    #architectural_first-small{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #architectural_first-big{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #architectural_second-big{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4; 
+    }
+
+    #architectural_second-small{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #architectural_third-small{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 7; 
+    }
+
+    #architectural_third-big{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5; 
+    }
+}
+
+@media screen and (max-width: 720px){
+    #architectural{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+
+    #architectural_first-small{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    #architectural_first-big{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    #architectural_second-big{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 7; 
+    }
+
+    #architectural_second-small{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+
+    #architectural_third-small{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 7;
+        grid-row-end: 9; 
+    }
+
+    #architectural_third-big{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 9;
+        grid-row-end: 10; 
+    }
+}
+
+/*Still Life Photography*/
+@media screen and (max-width: 1024px){
+    #still-life{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .gallery-one{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .gallery-two{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .gallery-three{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+    .gallery-four{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .gallery-five{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    .gallery-six{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
+
+@media screen and (max-width: 720px){
+    #still-life{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*Portrait and Fashion Photography*/
+@media screen and (max-width: 1024px){
+    #portrait{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+    .portrait1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .portrait2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;  
+    }
+    .portrait3{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .portrait4{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .portrait5{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4; 
+    }
+    .portrait6{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 6;  
+    }
+    .portrait7{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    .portrait8{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 7;  
+    }
+    .portrait9{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 7;
+        grid-row-end: 8;  
+    }
+    .portrait10{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 8;
+        grid-row-end: 10;  
+    }
+}
+
+@media screen and (max-width: 720px){
+    #portrait{
+        display: flex;
+        flex-direction: column;
+    }
+}
